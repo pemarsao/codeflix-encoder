@@ -23,7 +23,7 @@ func NewDb() *Database {
 	return &Database{}
 }
 
-func NewDbTest() *Database {
+func NewDbTest() *gorm.DB {
 	dbInstance := NewDb()
 	dbInstance.Env = "test"
 	dbInstance.DbTypeTest = "sqlite3"
